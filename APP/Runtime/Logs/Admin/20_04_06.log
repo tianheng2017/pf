@@ -1,0 +1,1761 @@
+[ 2020-04-06T13:00:22+08:00 ] 183.253.84.254 /Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\pf.xiangxin.me\APP\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_user` ORDER BY userid desc LIMIT 0,50   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\60dda32da550c2bcadbf7e515086a5c1.php 第 75 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\60dda32da550c2bcadbf7e515086a5c1.php 第 157 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-04-06T13:00:30+08:00 ] 183.253.84.254 /Admin/Group/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.006836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007812s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0098s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0107s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0186s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Group' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Group' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ysk_group` WHERE ( `id` LIKE '%%' OR `title` LIKE '%%' ) AND `status` >= '0' ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 73 行.
+NOTIC: [8] Use of undefined constant resume - assumed 'resume' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 145 行.
+NOTIC: [8] Use of undefined constant Group - assumed 'Group' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 145 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 146 行.
+NOTIC: [8] Use of undefined constant Group - assumed 'Group' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 146 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 147 行.
+NOTIC: [8] Use of undefined constant Group - assumed 'Group' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 147 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 156 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 202 行.
+NOTIC: [8] Use of undefined constant recycle - assumed 'recycle' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061524s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-04-06T13:00:32+08:00 ] 180.163.220.4 /Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\pf.xiangxin.me\APP\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0068s ]
+
+[ 2020-04-06T13:00:36+08:00 ] 180.163.220.4 /Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\pf.xiangxin.me\APP\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+
+[ 2020-04-06T13:00:45+08:00 ] 180.163.220.3 /Admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-04-06T13:01:23+08:00 ] 27.115.124.70 /Admin/Group/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+
+[ 2020-04-06T13:01:23+08:00 ] 27.115.124.70 /Admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.015625s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015625s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-04-06T13:02:05+08:00 ] 183.253.84.254 /Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\pf.xiangxin.me\APP\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_user` ORDER BY userid desc LIMIT 0,50   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\60dda32da550c2bcadbf7e515086a5c1.php 第 75 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\60dda32da550c2bcadbf7e515086a5c1.php 第 157 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-04-06T13:02:14+08:00 ] 183.253.84.254 /Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\pf.xiangxin.me\APP\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_user` ORDER BY userid desc LIMIT 0,50   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\60dda32da550c2bcadbf7e515086a5c1.php 第 75 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\60dda32da550c2bcadbf7e515086a5c1.php 第 157 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-04-06T13:02:16+08:00 ] 183.253.84.254 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0156s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Index' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: gid D:\wwwroot\pf.xiangxin.me\APP\Admin\Controller\AdminController.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Index' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE ( reg_date BETWEEN 1586102400 AND 1586188800 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `ysk_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_recharge` [ RunTime:0.0156s ]
+SQL: SELECT SUM(price) AS tp_sum FROM `ysk_recharge` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_withdraw` [ RunTime:0.0156s ]
+SQL: SELECT SUM(price) AS tp_sum FROM `ysk_withdraw` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_userrob` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_userrob` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_userrob` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_userrob` WHERE `status` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(price) AS tp_sum FROM `ysk_userrob` WHERE `status` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(price) AS tp_sum FROM `ysk_userrob` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_roborder` [ RunTime:0.0156s ]
+SQL: SELECT SUM(price) AS tp_sum FROM `ysk_roborder` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_roborder` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_somebill` [ RunTime:0.0156s ]
+SQL: SELECT SUM(num) AS tp_sum FROM `ysk_somebill` WHERE `jl_class` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\4d73593ea9413cb83b430e59017e71c1.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-04-06T13:02:23+08:00 ] 180.163.220.5 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+
+[ 2020-04-06T13:02:24+08:00 ] 180.163.220.5 /Admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034180s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034180s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-04-06T13:15:16+08:00 ] 183.253.84.254 /Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\pf.xiangxin.me\APP\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_user` ORDER BY userid desc LIMIT 0,50   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\60dda32da550c2bcadbf7e515086a5c1.php 第 75 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\60dda32da550c2bcadbf7e515086a5c1.php 第 157 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2020-04-06T13:15:31+08:00 ] 183.253.84.254 /Admin/Group/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Group' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Group' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ysk_group` WHERE ( `id` LIKE '%%' OR `title` LIKE '%%' ) AND `status` >= '0' ORDER BY sort asc, id asc  [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 73 行.
+NOTIC: [8] Use of undefined constant resume - assumed 'resume' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 145 行.
+NOTIC: [8] Use of undefined constant Group - assumed 'Group' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 145 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 146 行.
+NOTIC: [8] Use of undefined constant Group - assumed 'Group' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 146 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 147 行.
+NOTIC: [8] Use of undefined constant Group - assumed 'Group' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 147 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 156 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 202 行.
+NOTIC: [8] Use of undefined constant recycle - assumed 'recycle' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-04-06T13:20:36+08:00 ] 183.253.84.254 /Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\pf.xiangxin.me\APP\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0322s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_user` ORDER BY userid desc LIMIT 0,50   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.015625s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\60dda32da550c2bcadbf7e515086a5c1.php 第 75 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\60dda32da550c2bcadbf7e515086a5c1.php 第 157 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-04-06T13:20:48+08:00 ] 183.253.84.254 /Admin/Group/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Group' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Group' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_group` WHERE ( `id` LIKE '%%' OR `title` LIKE '%%' ) AND `status` >= '0' ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 73 行.
+NOTIC: [8] Use of undefined constant resume - assumed 'resume' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 145 行.
+NOTIC: [8] Use of undefined constant Group - assumed 'Group' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 145 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 146 行.
+NOTIC: [8] Use of undefined constant Group - assumed 'Group' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 146 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 147 行.
+NOTIC: [8] Use of undefined constant Group - assumed 'Group' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 147 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 156 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 202 行.
+NOTIC: [8] Use of undefined constant recycle - assumed 'recycle' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-04-06T13:21:00+08:00 ] 183.253.84.254 /Admin/Group/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0332s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Group' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Group' AND `act` = 'add' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 ORDER BY sort asc,id asc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: info D:\wwwroot\pf.xiangxin.me\APP\Admin\Controller\GroupController.class.php 第 68 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 73 行.
+NOTIC: [8] Use of undefined constant 新增 - assumed '新增' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 129 行.
+NOTIC: [8] Undefined variable: info D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 154 行.
+NOTIC: [8] Undefined variable: info D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 162 行.
+NOTIC: [8] Undefined variable: info D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 168 行.
+NOTIC: [8] Undefined variable: info D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 185 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 185 行.
+NOTIC: [8] Undefined variable: info D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 191 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 191 行.
+NOTIC: [8] Undefined variable: info D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [8] Undefined variable: info D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [8] Undefined variable: info D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [8] Undefined variable: info D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [8] Undefined variable: info D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [8] Undefined variable: info D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [8] Undefined variable: info D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [8] Undefined variable: info D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [8] Undefined variable: info D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 191 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 191 行.
+NOTIC: [8] Undefined variable: info D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [8] Undefined variable: info D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [8] Undefined variable: info D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [8] Undefined variable: info D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [8] Undefined variable: info D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [8] Undefined variable: info D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 191 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 191 行.
+NOTIC: [8] Undefined variable: info D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [8] Undefined variable: info D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [8] Undefined variable: info D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [8] Undefined variable: info D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\ba229f6a454d0c67048a986eef6b1dce.php 第 197 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-04-06T13:21:05+08:00 ] 42.236.10.117 /Admin/Group/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0059s ]
+
+[ 2020-04-06T13:21:06+08:00 ] 183.253.84.254 /Admin/Group/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Group' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0156s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Group' AND `act` = 'add' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0156s ]
+NOTIC: [2] implode(): Invalid arguments passed D:\wwwroot\pf.xiangxin.me\APP\Admin\Controller\GroupController.class.php 第 52 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\wwwroot\pf.xiangxin.me\APP\Admin\Controller\GroupController.class.php 第 53 行.
+NOTIC: [8] Undefined index: validate D:\wwwroot\pf.xiangxin.me\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `ysk_group` WHERE `title` = '18559453301' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2020-04-06T13:21:07+08:00 ] 42.236.10.117 /Admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-04-06T13:21:09+08:00 ] 183.253.84.254 /Admin/Group/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Group' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Group' AND `act` = 'add' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0156s ]
+NOTIC: [2] implode(): Invalid arguments passed D:\wwwroot\pf.xiangxin.me\APP\Admin\Controller\GroupController.class.php 第 52 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\wwwroot\pf.xiangxin.me\APP\Admin\Controller\GroupController.class.php 第 53 行.
+NOTIC: [8] Undefined index: validate D:\wwwroot\pf.xiangxin.me\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `ysk_group` WHERE `title` = '18559453301' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2020-04-06T13:21:14+08:00 ] 183.253.84.254 /Admin/Group/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Group' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Group' AND `act` = 'add' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\pf.xiangxin.me\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `ysk_group` WHERE `title` = '18559453301' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\wwwroot\pf.xiangxin.me\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `ysk_group` (`id`,`title`,`sort`,`menu_auth`,`hylb`,`create_time`,`update_time`,`status`) VALUES ('0','18559453301','13412312','1,7,8,9,348,349,350,351,359,357,352,353,355,360,361,356,3,5,6,327,323','1,2,3,4,5','1586150474','1586150474','1') [ RunTime:0.0156s ]
+
+[ 2020-04-06T13:21:16+08:00 ] 183.253.84.254 /Admin/Group/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Group' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Group' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_group` WHERE ( `id` LIKE '%%' OR `title` LIKE '%%' ) AND `status` >= '0' ORDER BY sort asc, id asc  [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 73 行.
+NOTIC: [8] Use of undefined constant resume - assumed 'resume' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 145 行.
+NOTIC: [8] Use of undefined constant Group - assumed 'Group' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 145 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 146 行.
+NOTIC: [8] Use of undefined constant Group - assumed 'Group' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 146 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 147 行.
+NOTIC: [8] Use of undefined constant Group - assumed 'Group' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 147 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 156 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 202 行.
+NOTIC: [8] Use of undefined constant recycle - assumed 'recycle' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 206 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 202 行.
+NOTIC: [8] Use of undefined constant recycle - assumed 'recycle' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2020-04-06T13:22:34+08:00 ] 183.253.84.254 /Admin/Group/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.007813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008789s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Group' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Group' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_group` WHERE ( `id` LIKE '%%' OR `title` LIKE '%%' ) AND `status` >= '0' ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 73 行.
+NOTIC: [8] Use of undefined constant resume - assumed 'resume' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 145 行.
+NOTIC: [8] Use of undefined constant Group - assumed 'Group' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 145 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 146 行.
+NOTIC: [8] Use of undefined constant Group - assumed 'Group' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 146 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 147 行.
+NOTIC: [8] Use of undefined constant Group - assumed 'Group' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 147 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 156 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 202 行.
+NOTIC: [8] Use of undefined constant recycle - assumed 'recycle' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 206 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 202 行.
+NOTIC: [8] Use of undefined constant recycle - assumed 'recycle' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-04-06T13:22:46+08:00 ] 183.253.84.254 /Admin/Group/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Group' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Group' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ysk_group` WHERE ( `id` LIKE '%%' OR `title` LIKE '%%' ) AND `status` >= '0' ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 73 行.
+NOTIC: [8] Use of undefined constant resume - assumed 'resume' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 145 行.
+NOTIC: [8] Use of undefined constant Group - assumed 'Group' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 145 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 146 行.
+NOTIC: [8] Use of undefined constant Group - assumed 'Group' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 146 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 147 行.
+NOTIC: [8] Use of undefined constant Group - assumed 'Group' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 147 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 156 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 202 行.
+NOTIC: [8] Use of undefined constant recycle - assumed 'recycle' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 206 行.
+NOTIC: [8] Use of undefined constant forbid - assumed 'forbid' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 202 行.
+NOTIC: [8] Use of undefined constant recycle - assumed 'recycle' D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\71b4270cf0cbb6f68b06b505e96ee713.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-04-06T13:23:01+08:00 ] 183.253.84.254 /Admin/Tree/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Tree' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Tree' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ysk_user` WHERE `pid` = 0 ORDER BY userid asc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i D:\wwwroot\pf.xiangxin.me\APP\Admin\Controller\TreeController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\e6ec180eceab7c3fd88cdd0ff446dca9.php 第 134 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\e6ec180eceab7c3fd88cdd0ff446dca9.php 第 207 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047852s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047852s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-04-06T13:23:11+08:00 ] 42.236.10.75 /Admin/Tree/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+
+[ 2020-04-06T13:23:15+08:00 ] 42.236.10.75 /Admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2020-04-06T14:56:17+08:00 ] 42.236.10.114 /Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\pf.xiangxin.me\APP\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+
+[ 2020-04-06T14:56:17+08:00 ] 42.236.10.114 /Admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-04-06T15:00:05+08:00 ] 180.163.220.5 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+
+[ 2020-04-06T15:00:12+08:00 ] 180.163.220.5 /Admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-04-06T15:02:02+08:00 ] 42.236.10.75 /Admin/Group/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0332s ]
+
+[ 2020-04-06T15:02:18+08:00 ] 42.236.10.78 /Admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2020-04-06T15:02:21+08:00 ] 42.236.10.78 /Admin/Group/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+
+[ 2020-04-06T15:02:22+08:00 ] 42.236.10.78 /Admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000976s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020508s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2020-04-06T15:22:33+08:00 ] 116.252.233.188 /Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\pf.xiangxin.me\APP\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+
+[ 2020-04-06T15:22:34+08:00 ] 116.252.233.188 /Admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.007813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008790s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025390s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025390s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-04-06T15:22:49+08:00 ] 116.252.233.188 /Admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: avatar D:\wwwroot\pf.xiangxin.me\APP\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: email D:\wwwroot\pf.xiangxin.me\APP\Admin\Model\ManageModel.class.php 第 94 行.
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ysk_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: avatar D:\wwwroot\pf.xiangxin.me\APP\Admin\Model\ManageModel.class.php 第 189 行.
+
+[ 2020-04-06T15:22:51+08:00 ] 116.252.233.188 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.015625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0205s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Index' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: gid D:\wwwroot\pf.xiangxin.me\APP\Admin\Controller\AdminController.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Index' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE ( reg_date BETWEEN 1586102400 AND 1586188800 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `ysk_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_recharge` [ RunTime:0.0156s ]
+SQL: SELECT SUM(price) AS tp_sum FROM `ysk_recharge` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_withdraw` [ RunTime:0.0000s ]
+SQL: SELECT SUM(price) AS tp_sum FROM `ysk_withdraw` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_userrob` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_userrob` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_userrob` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_userrob` WHERE `status` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(price) AS tp_sum FROM `ysk_userrob` WHERE `status` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(price) AS tp_sum FROM `ysk_userrob` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_roborder` [ RunTime:0.0156s ]
+SQL: SELECT SUM(price) AS tp_sum FROM `ysk_roborder` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_roborder` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_somebill` [ RunTime:0.0156s ]
+SQL: SELECT SUM(num) AS tp_sum FROM `ysk_somebill` WHERE `jl_class` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.015625s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\4d73593ea9413cb83b430e59017e71c1.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-04-06T15:22:58+08:00 ] 116.252.233.188 /Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\pf.xiangxin.me\APP\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0166s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0156s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_user` ORDER BY userid desc LIMIT 0,50   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\60dda32da550c2bcadbf7e515086a5c1.php 第 75 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\60dda32da550c2bcadbf7e515086a5c1.php 第 157 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-04-06T16:53:49+08:00 ] 180.163.220.67 /Admin/Group/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+
+[ 2020-04-06T16:53:49+08:00 ] 180.163.220.67 /Admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034180s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034180s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002929s ]
+
+[ 2020-04-06T16:56:01+08:00 ] 42.236.10.114 /Admin/Tree/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+
+[ 2020-04-06T16:56:01+08:00 ] 42.236.10.114 /Admin/Tree/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+
+[ 2020-04-06T16:56:02+08:00 ] 42.236.10.114 /Admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.008789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008789s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000976s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033203s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2020-04-06T17:04:53+08:00 ] 183.253.84.254 /Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\pf.xiangxin.me\APP\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_user` ORDER BY userid desc LIMIT 0,50   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\60dda32da550c2bcadbf7e515086a5c1.php 第 75 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\60dda32da550c2bcadbf7e515086a5c1.php 第 157 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-04-06T17:05:00+08:00 ] 183.253.84.254 /Admin/Tree/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0176s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0107s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0107s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0137s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Tree' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Tree' AND `act` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0313s ]
+SQL: SELECT * FROM `ysk_user` WHERE `pid` = 0 ORDER BY userid asc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i D:\wwwroot\pf.xiangxin.me\APP\Admin\Controller\TreeController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\e6ec180eceab7c3fd88cdd0ff446dca9.php 第 134 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\e6ec180eceab7c3fd88cdd0ff446dca9.php 第 207 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-04-06T17:05:01+08:00 ] 183.253.84.254 /Admin/User/recharge.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\pf.xiangxin.me\APP\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0156s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'recharge' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_recharge` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_recharge` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_recharge` ORDER BY id desc LIMIT 0,50   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_system` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ysk_system` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\c3597ce05c8b81c5f841a7b8c4ff5b41.php 第 75 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\c3597ce05c8b81c5f841a7b8c4ff5b41.php 第 157 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-04-06T17:05:01+08:00 ] 183.253.84.254 /Admin/User/withdraw.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\pf.xiangxin.me\APP\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'withdraw' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_withdraw` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_withdraw` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_withdraw` ORDER BY id desc LIMIT 0,50   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\83507804a92d4dd9c388590b9289ddd0.php 第 75 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\83507804a92d4dd9c388590b9289ddd0.php 第 157 行.
+NOTIC: [8] Undefined index: marker D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\83507804a92d4dd9c388590b9289ddd0.php 第 212 行.
+NOTIC: [8] Undefined index: marker D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\83507804a92d4dd9c388590b9289ddd0.php 第 212 行.
+NOTIC: [8] Undefined index: marker D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\83507804a92d4dd9c388590b9289ddd0.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-04-06T17:05:02+08:00 ] 183.253.84.254 /Admin/User/bankcard.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\pf.xiangxin.me\APP\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0313s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'bankcard' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_bankcard` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_bankcard` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_bankcard` ORDER BY id desc LIMIT 0,50   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\c17ee00ea4af0522c1ce33ae29fcfb41.php 第 75 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\c17ee00ea4af0522c1ce33ae29fcfb41.php 第 157 行.
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0166s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 51 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 51 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 50 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 50 LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079102s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2020-04-06T17:05:03+08:00 ] 183.253.84.254 /Admin/User/ewm.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\pf.xiangxin.me\APP\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0156s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'ewm' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_ewm` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_ewm` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_ewm` ORDER BY id desc LIMIT 0,50   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: _user_auth D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\56d5e34f819a0d788f64ad813f5b8e22.php 第 75 行.
+NOTIC: [8] Undefined index: keyword D:\wwwroot\pf.xiangxin.me\APP\Runtime\Cache\Admin\56d5e34f819a0d788f64ad813f5b8e22.php 第 157 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-04-06T17:05:05+08:00 ] 42.236.10.93 /Admin/User/withdraw.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\pf.xiangxin.me\APP\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+
+[ 2020-04-06T17:05:06+08:00 ] 42.236.10.93 /Admin/User/withdraw.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\pf.xiangxin.me\APP\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+
+[ 2020-04-06T17:05:06+08:00 ] 42.236.10.93 /Admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2020-04-06T17:05:10+08:00 ] 42.236.10.117 /Admin/User/recharge.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\pf.xiangxin.me\APP\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0000s ]
+
+[ 2020-04-06T17:05:12+08:00 ] 42.236.10.117 /Admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003907s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005860s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021485s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2020-04-06T22:10:47+08:00 ] 27.115.124.6 /Admin/User/withdraw.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\pf.xiangxin.me\APP\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0078s ]
+
+[ 2020-04-06T22:10:48+08:00 ] 27.115.124.6 /Admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-04-06T22:16:48+08:00 ] 180.163.220.68 /Admin/User/recharge.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.005859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007812s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\pf.xiangxin.me\APP\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0117s ]
+
+[ 2020-04-06T22:16:49+08:00 ] 180.163.220.68 /Admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019531s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019531s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2020-04-06T22:16:50+08:00 ] 180.163.220.67 /Admin/User/recharge.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\wwwroot\pf.xiangxin.me\APP\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' D:\wwwroot\pf.xiangxin.me\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0068s ]
+
+[ 2020-04-06T22:16:50+08:00 ] 180.163.220.67 /Admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019531s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019531s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
