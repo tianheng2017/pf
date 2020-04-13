@@ -10,6 +10,99 @@ use Think\Page;
 class UserController extends AdminController
 {
 
+    /**
+     * 上传图片
+     */
+    public function upload(){
+        $files = $_FILES['img'];
+        $upload = new \Think\Upload();// 实例化上传类
+        $upload->maxSize   =     3145728 ;// 设置附件上传大小
+        $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+        $upload->rootPath  =     '/'; // 设置附件上传根目录
+        $upload->savePath  =     '/Uploads/shop/'; // 设置附件上传（子）目录
+        $info   =   $upload->uploadOne($files);
+        if(!$info) {
+            $this->error($upload->getError());
+            return json_encode(['code'=>1], true);
+        }else{
+            $infopath = $info['savepath'].$info['savename'];
+            return json_encode(['url' =>$infopath, 'code'=>0], true);
+        }
+    }
+
+    //商品列表
+    public function shop(){
+        $querytype = trim(I('get.querytype'));
+        $account = trim(I('get.keyword'));
+        $coinpx = trim(I('get.coinpx'));
+        if($querytype != ''){
+            if($querytype=='mobile'){
+                $map['uaccount'] = $account;
+            }elseif($querytype=='userid'){
+                $map['uid'] = $account;
+            }
+        }else{
+            $map = '';
+        }
+        $userobj = M('shop');
+        $count =$userobj->where($map)->count();
+        $p = getpagee($count,50);
+        if($coinpx){
+            if($coinpx == 1){
+                $list = $userobj->where ( $map )->order ( 'price desc' )->limit ( $p->firstRow, $p->listRows )->select ();
+            }else{
+                $list = $userobj->where ( $map )->order ( 'id desc' )->limit ( $p->firstRow, $p->listRows )->select ();
+            }
+        }else{
+            $list = $userobj->where ( $map )->order ( 'id desc' )->limit ( $p->firstRow, $p->listRows )->select ();
+        }
+        $this->assign('count',$count);
+        $this->assign ( 'list', $list ); // 賦值數據集
+        $this->assign('count',$count);
+        $this->assign ( 'page', $p->show() ); // 賦值分頁輸出
+        $this->display();
+    }
+
+    //二维码编辑
+    public function shopedit(){
+        $id= trim(I('get.id'));
+        if (IS_POST){
+            $data = $_POST;
+            $files = $_FILES['img'];
+            $upload = new \Think\Upload();// 实例化上传类
+            $upload->maxSize   =     3145728 ;// 设置附件上传大小
+            $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+            $upload->rootPath  =     '/'; // 设置附件上传根目录
+            $upload->savePath  =     '/Uploads/shop/'; // 设置附件上传（子）目录
+            $info   =   $upload->uploadOne($files);
+            if($info) {
+                $data['img'] = $info['savepath'].$info['savename'];
+            }
+            $shop = M('shop')->find($id);
+            $result = $shop->save($data);
+            if ($result){
+                $this->success('提交成功');
+            }else{
+                $this->success('提交失败');
+            }
+        }
+        $shopinfo = M('shop')->where(array('id'=>$id))->find();
+        $this->assign('info',$shopinfo);
+        $this->display();
+    }
+
+    //删除二维码
+    public function delshop(){
+        $id= trim(I('get.id'));
+        $re = M('shop')->where(array('id'=>$id))->delete();
+        if($re){
+            $this->success('删除成功');
+        }else{
+            $this->error('删除失败');
+        }
+
+    }
+
 
     /**
      * 用户列表
