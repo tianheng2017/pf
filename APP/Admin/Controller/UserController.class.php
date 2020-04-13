@@ -76,10 +76,9 @@ class UserController extends AdminController
             $upload->savePath  =     '/Uploads/shop/'; // 设置附件上传（子）目录
             $info   =   $upload->uploadOne($files);
             if($info) {
-                $data['img'] = $info['savepath'].$info['savename'];
+                $data['img'] = $info['savePath'].$info['savename'];
             }
-            $shop = M('shop')->find($id);
-            $result = $shop->save($data);
+            $result = M('shop')->where(['id'=>$id])->save($data);
             if ($result){
                 $this->success('提交成功');
             }else{
