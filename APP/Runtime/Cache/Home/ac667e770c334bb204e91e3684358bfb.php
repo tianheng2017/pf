@@ -157,9 +157,9 @@
 	</header>	
 		<div class="mui-card-content erweima">		
 			<div class="opiniontop_d" style=" background: none;width: 80%;margin: 5px auto 0 auto;height:170px; border-radius:5px;">
-	         <div class="clear oneimg" style="width:100%;height:100%;color:#000;padding:10px 5px;">
-                 <div id="filelist1" class="files fl" style="margin: 15% auto;">
-                     <span id="filePicker1" class="file-btn webuploader-container">
+				<div class="clear oneimg" style="width:100%;height:100%;color:#000;padding:10px 5px;">
+				 <div id="filelist1" class="files fl" style="margin: 15% auto;">
+					 <span id="filePicker1" class="file-btn webuploader-container">
 						<div class="webuploader-pick">
 							<img src="../Public/home/wap/images/tianjia.png"  id="img1" onload="setImgWH(this)"  />
 						</div>
@@ -170,10 +170,9 @@
 					</span>
 					 <input type="hidden" name="icon" id="icon" value="">
 					 <input type="hidden" name="ewmclass" id="ewmclass" value="1">
-                 </div>
-                
-             </div>
-		</div>
+				 </div>
+				</div>
+			</div>
 		</div>
 		<span class="spanleixing">【请选择收款类型】</span>
 			<ul class="mui-table-view mui-table-view-radio ulleixing">

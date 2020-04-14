@@ -158,17 +158,28 @@
                                                     <input type="text" class="form-control input" name="price" value="<?php echo ($info["price"]); ?>" />
                                                 </div>
                                             </div>
-
                                             <div class="form-group item_title ">
                                                 <label class="left control-label">商品图片：</label>
                                                 <div class="right">
-                                                    <input name="img" id="upload" type="file" class="btn" onchange="changepic(this);">
-                                                </div>
-                                            </div>
-                                            <div class="form-group item_title ">
-                                                <label class="left control-label">图片详情：</label>
-                                                <div class="right">
-                                                    <img id="show" src="<?php echo ($info["img"]); ?>" style="width:10%"/>
+                                                    <div class="mui-card-content erweima">
+                                                        <div class="opiniontop_d" style=" background: none;width: 80%;margin: 5px auto 0 auto;height:170px; border-radius:5px;">
+                                                            <div class="clear oneimg" style="width:100%;height:100%;color:#000;padding:10px 5px;">
+                                                                <div id="filelist1" class="files fl" style="margin: 15% auto;">
+                                                                     <span id="filePicker1" class="file-btn webuploader-container">
+                                                                        <div class="webuploader-pick">
+                                                                            <img src="<?php echo ($info["img"]); ?>" id="img1" onload="setImgWH(this)" />
+                                                                        </div>
+                                                                        <div id="rt_rt_1cvagj2mr16sv1dg91skisdj1qfr1" style="position: absolute; top: 0px; left: 0px; width: 120px; height: 100%; overflow: hidden; bottom: auto; right: auto;display:none;">
+                                                                            <input type="file" name="file" class="webuploader-element-invisible" accept="image/jpg,image/gif,image/png,image/jpeg">
+                                                                            <label style="opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255);"></label>
+                                                                        </div>
+                                                                    </span>
+                                                                    <input type="hidden" name="icon" id="icon" value="">
+                                                                    <input type="hidden" name="ewmclass" id="ewmclass" value="1">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         <div class="form-group"></div>
@@ -209,28 +220,17 @@
             <script type="text/javascript" src="/APP/Admin/View/Public/js/admin.js"></script>
             
     <script type="text/javascript" src="/Public/libs/lyui/dist/js/lyui.extend.min.js"></script>
+    <script type="text/javascript" src="/Public/home/common/js/public.js" ></script>
+    <script type="text/javascript" src="/Public/home/common/js/Uploader.swf" ></script>
+    <script type="text/javascript" src="/Public/home/common/js/webuploader.js" ></script>
+    <script type="text/javascript">
+        var UPLOAD_URL = "/Home/User/uploadfile";
+        var SWF_URL = '/Public/js/Uploader.swf';
+        $(function () {
+            upload1();
+        });
+    </script>
     <script>
-        $('#upLoad').on('change',function(){
-            var formData = new FormData();
-            var name = $($(this)).val();
-            var files = $($(this))[0].files[0];
-            formData.append("file", files);
-            formData.append("name", name);
-            $.ajax({
-                url: "/Admin/User/upload",
-                type: 'POST',
-                data: formData,
-                processData: false,
-                contentType: false,
-                dataType: 'json',
-                success:function (res) {
-                    alert('上传成功');
-                }
-                ,error:function (res) {
-                    alert('错误');
-                }
-            });
-        })
         function changepic() {
             var reads= new FileReader();
             f=document.getElementById('upload').files[0];
