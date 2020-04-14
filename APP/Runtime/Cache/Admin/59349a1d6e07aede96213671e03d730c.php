@@ -166,7 +166,7 @@
                                                 </div>
                                             </div>
                                             <div class="form-group item_title ">
-                                                <label class="left control-label">图片详情：</label>
+                                                <label class="left control-label"></label>
                                                 <div class="right">
                                                     <img id="show" src="<?php echo ($info["img"]); ?>" style="width:10%"/>
                                                 </div>
