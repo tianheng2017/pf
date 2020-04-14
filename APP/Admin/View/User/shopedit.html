@@ -32,13 +32,13 @@
                                             <div class="form-group item_title ">
                                                 <label class="left control-label">商品名称：</label>
                                                 <div class="right">
-                                                    <input type="text" name="name" class="form-control input" value="{$info.name}"/>
+                                                    <input type="text" id="name" name="name" class="form-control input" value="{$info.name}"/>
                                                 </div>
                                             </div>
                                             <div class="form-group item_title ">
                                                 <label class="left control-label">商品价格：</label>
                                                 <div class="right">
-                                                    <input type="text" class="form-control input" name="price" value="{$info.price}" />
+                                                    <input type="text" id="price" class="form-control input" name="price" value="{$info.price}" />
                                                 </div>
                                             </div>
 
@@ -85,10 +85,13 @@
         }
         $('#submits').on('click',function () {
             var formData = new FormData($('#file')[0]);
+            var name = $('#name').val();
+            var price = $('#price').val();
+            var id = $('#id').val();
             $.ajax({
                 type: 'post',
                 url: "__SELF__",
-                data: formData,
+                data: {'name': name, 'id': id, 'price': price, 'img': formData},
                 cache: false,
                 processData: false,
                 contentType: false,

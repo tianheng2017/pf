@@ -128,7 +128,6 @@
             <li class="text-muted">商品管理 /  商品编辑</li>
 
         </ul>
-
         <!-- 主体内容区域 -->
         <div class="tab-content ct-tab-content">
             <div class="panel-body">
@@ -137,7 +136,7 @@
                     <div class="builder-container" >
                             <div class="row" >
                                 <div class="col-xs-12">
-                                    <form action="/Admin/User/shopedit/id/77.html" method="post" class="form-horizontal form form-builder" enctype="multipart/form-data">
+                                    <form action="/Admin/User/shopedit/id/77.html" id="form" method="post" class="form-horizontal form form-builder" enctype="multipart/form-data">
                                         <div class="form-type-list">
                                             <div class="form-group hidden item_id ">
                                                 <label class="left control-label">ID号：</label>
@@ -175,7 +174,7 @@
                                         <div class="form-group bottom_button_list">
                                             <label class="left control-label"></label>
                                             <div class="right">
-                                                <button class="btn btn-danger return" type="submit">提交</button>
+                                                <button class="btn btn-danger return" type="submit" id="submits">提交</button>
                                             </div>
                                         </div>
                                     </div>
@@ -218,6 +217,21 @@
                 document.getElementById('show').src=this.result;
             };
         }
+        $('#submits').on('click',function () {
+            var formData = new FormData($('#file')[0]);
+            $.ajax({
+                type: 'post',
+                url: "/Admin/User/shopedit/id/77.html",
+                data: formData,
+                cache: false,
+                processData: false,
+                contentType: false,
+            }).success(function (data) {
+                alert(data);
+            }).error(function () {
+                alert("上传失败");
+            });
+        });
     </script>
 
         </div>
