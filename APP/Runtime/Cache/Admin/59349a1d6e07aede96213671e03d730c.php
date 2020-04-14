@@ -137,7 +137,7 @@
                     <div class="builder-container" >
                             <div class="row" >
                                 <div class="col-xs-12">
-                                    <form action="/Admin/User/shopedit/id/77.html" method="post" class="form-horizontal form form-builder">
+                                    <form action="/Admin/User/shopedit/id/77.html" method="post" class="form-horizontal form form-builder" enctype="multipart/form-data">
                                         <div class="form-type-list">
                                             <div class="form-group hidden item_id ">
                                                 <label class="left control-label">ID号：</label>
