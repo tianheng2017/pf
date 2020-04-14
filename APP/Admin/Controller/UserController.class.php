@@ -15,19 +15,18 @@ class UserController extends AdminController
      */
     public function upload(){
         $files = $_FILES['img'];
-        $upload = new \Think\Upload();// 实例化上传类
-        $upload->maxSize   =     3145728 ;// 设置附件上传大小
-        $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
-        $upload->rootPath  =     '/'; // 设置附件上传根目录
-        $upload->savePath  =     '/Uploads/shop/'; // 设置附件上传（子）目录
-        $info   =   $upload->uploadOne($files);
-        if(!$info) {
-            $this->error($upload->getError());
-            return json_encode(['code'=>1], true);
-        }else{
-            $infopath = $info['savepath'].$info['savename'];
-            return json_encode(['url' =>$infopath, 'code'=>0], true);
-        }
+        $config = array(
+            'maxSize'    =>   3145728,
+            'rootPath' => './Uploads/shop/',
+            'saveName'   =>    array('uniqid',''),
+            'exts'       =>    array('jpg', 'gif', 'png', 'jpeg'),
+            'autoSub'    =>    true,
+            'subName'    =>    array('',''),
+        );
+        $upload = new \Think\Upload($config);
+        $info = $upload->upload($files);
+        $path = $info['uploadFile']['savename'];
+        $this->ajaxReturn($path);
     }
 
     //商品列表
@@ -70,14 +69,14 @@ class UserController extends AdminController
             $data = $_POST;
             $files = $_FILES['img'];
             $upload = new \Think\Upload();// 实例化上传类
-            $upload->maxSize   =     3145728 ;// 设置附件上传大小
             $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
-            $upload->rootPath  =     '/Uploads/shop/'; // 设置附件上传根目录
+            $upload->rootPath  =     '/Uploads/shop'; // 设置附件上传根目录
             $upload->savePath  =     ''; // 设置附件上传（子）目录
             $info   =   $upload->uploadOne($files);
             if($info) {
                 $data['img'] = $info['savePath'].$info['savename'];
             }
+            var_dump($data);
             $result = M('shop')->where(['id'=>$id])->save($data);
             if ($result){
                 $this->success('提交成功');

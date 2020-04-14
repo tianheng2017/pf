@@ -136,7 +136,7 @@
                     <div class="builder-container" >
                             <div class="row" >
                                 <div class="col-xs-12">
-                                    <form action="/Admin/User/shopedit/id/77.html" id="form" method="post" class="form-horizontal form form-builder" enctype="multipart/form-data">
+                                    <form action="/Admin/User/shopedit/id/77.html" method="post" class="form-horizontal form form-builder" enctype="multipart/form-data">
                                         <div class="form-type-list">
                                             <div class="form-group hidden item_id ">
                                                 <label class="left control-label">ID号：</label>
@@ -161,7 +161,8 @@
                                             <div class="form-group item_title ">
                                                 <label class="left control-label">商品图片：</label>
                                                 <div class="right">
-                                                    <input name="img" id="file" type="file" class="btn" onchange="changepic(this)">
+                                                    <div id="uploadBtn" class="btn btn-primary">点击上传</div>
+                                                    <input type="file" style="display:none;" id="uploadFile" name="img" onchange="uploadFile();"/>
                                                 </div>
                                             </div>
                                             <div class="form-group item_title ">
@@ -208,7 +209,31 @@
             <script type="text/javascript" src="/APP/Admin/View/Public/js/admin.js"></script>
             
     <script type="text/javascript" src="/Public/libs/lyui/dist/js/lyui.extend.min.js"></script>
+    <script type="text/javascript" src="/APP/Admin/View/Public/js/ajaxfileupload.js"></script>
     <script>
+        $("#uploadBtn").click(function(){
+            $("#uploadFile").click();
+        });
+        function uploadFile(){
+            $.ajaxFileUpload({
+                url: "/Admin/User/upload",
+                type: 'post',
+                secureuri: false,
+                fileElementId: "img",
+                dataType: 'json',
+                success: function(data){
+                    var imgName=delHtmlTag(data.replace(/\"/g,""));
+                    $("#show").html('/Uploads/shop/' + imgName);
+                },
+                error: function(data, status, e){
+                    alert(e);
+                    console.log(data);
+                }
+            });
+        }
+        function delHtmlTag(str){
+            return str.replace(/<[^>]+>/g,"");
+        }
         function changepic() {
             var reads= new FileReader();
             f=document.getElementById('file').files[0];
@@ -217,21 +242,6 @@
                 document.getElementById('show').src=this.result;
             };
         }
-        $('#submits').on('click',function () {
-            var formData = new FormData($('#file')[0]);
-            $.ajax({
-                type: 'post',
-                url: "/Admin/User/shopedit/id/77.html",
-                data: formData,
-                cache: false,
-                processData: false,
-                contentType: false,
-            }).success(function (data) {
-                alert(data);
-            }).error(function () {
-                alert("上传失败");
-            });
-        });
     </script>
 
         </div>
