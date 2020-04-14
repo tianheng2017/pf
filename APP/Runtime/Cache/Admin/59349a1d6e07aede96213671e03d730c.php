@@ -137,7 +137,7 @@
                     <div class="builder-container" >
                             <div class="row" >
                                 <div class="col-xs-12">
-                                    <form action="/Admin/User/shopedit/id/77.html" method="post" class="form-horizontal form form-builder">
+                                    <form action="/Admin/User/shopedit/id/77.html" method="post" class="form-horizontal form form-builder" enctype="multipart/form-data">
                                         <div class="form-type-list">
                                             <div class="form-group hidden item_id ">
                                                 <label class="left control-label">ID号：</label>
@@ -162,7 +162,7 @@
                                             <div class="form-group item_title ">
                                                 <label class="left control-label">商品图片：</label>
                                                 <div class="right">
-                                                    <input name="img" id="file" type="file" class="btn" onchange="changepic(this)">
+                                                    <input name="img" id="upload" type="file" class="btn" onchange="changepic(this);">
                                                 </div>
                                             </div>
                                             <div class="form-group item_title ">
@@ -210,9 +210,30 @@
             
     <script type="text/javascript" src="/Public/libs/lyui/dist/js/lyui.extend.min.js"></script>
     <script>
+        $('#upLoad').on('change',function(){
+            var formData = new FormData();
+            var name = $($(this)).val();
+            var files = $($(this))[0].files[0];
+            formData.append("file", files);
+            formData.append("name", name);
+            $.ajax({
+                url: "/Admin/User/upload",
+                type: 'POST',
+                data: formData,
+                processData: false,
+                contentType: false,
+                dataType: 'json',
+                success:function (res) {
+                    alert('上传成功');
+                }
+                ,error:function (res) {
+                    alert('错误');
+                }
+            });
+        })
         function changepic() {
             var reads= new FileReader();
-            f=document.getElementById('file').files[0];
+            f=document.getElementById('upload').files[0];
             reads.readAsDataURL(f);
             reads.onload=function (e) {
                 document.getElementById('show').src=this.result;
